@@ -1,0 +1,93 @@
+.skeleton-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.skeleton-card, .skeleton-list, .skeleton-text, .skeleton-chart {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-image, .skeleton-line, .skeleton-circle, .skeleton-bar {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.12) 50%, rgba(255, 255, 255, 0.05) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: var(--radius-sm);
+}
+
+[data-theme='light'] .skeleton-image,
+[data-theme='light'] .skeleton-line,
+[data-theme='light'] .skeleton-circle,
+[data-theme='light'] .skeleton-bar {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.04) 25%, rgba(0, 0, 0, 0.09) 50%, rgba(0, 0, 0, 0.04) 75%);
+  background-size: 200% 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Specific structures */
+.skeleton-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.skeleton-image {
+  height: 120px;
+  width: 100%;
+}
+
+.skeleton-line {
+  height: 14px;
+}
+
+.skeleton-line.short { width: 40%; }
+.skeleton-line.medium { width: 70%; }
+.skeleton-line.long { width: 100%; }
+
+.skeleton-list {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.skeleton-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+}
+
+.skeleton-lines {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.skeleton-chart {
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding-top: var(--spacing-lg);
+}
+
+.skeleton-bar {
+  width: 12%;
+  min-height: 20px;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+}

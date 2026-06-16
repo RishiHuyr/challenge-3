@@ -1,0 +1,318 @@
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.dashboard-title {
+  font-size: 2.2rem;
+  background: linear-gradient(135deg, var(--text-primary), var(--text-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme='high-contrast'] .dashboard-title {
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: var(--text-primary);
+  color: var(--text-primary);
+}
+
+.dashboard-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+/* Stats Cards Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+}
+
+.stat-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+/* Background gradients for stat icons */
+.trans-bg { background-color: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.2); }
+.forest-bg { background-color: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.2); }
+.net-bg { background-color: rgba(139, 92, 246, 0.15); border: 1px solid rgba(139, 92, 246, 0.2); }
+.points-bg { background-color: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.2); }
+
+.stat-content {
+  flex-grow: 1;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-xs);
+}
+
+.stat-value {
+  font-size: 1.6rem;
+  font-weight: 800;
+  font-family: var(--font-display);
+  line-height: 1.1;
+  margin-bottom: var(--spacing-xs);
+}
+
+.stat-unit {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.stat-trend {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.stat-trend.good { color: var(--primary-color); }
+.stat-trend.bad { color: var(--danger-color); }
+
+.stat-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Charts Grid */
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+@media (max-width: 900px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chart-card {
+  padding: var(--spacing-lg);
+}
+
+.chart-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+  font-weight: 600;
+}
+
+.chart-wrapper {
+  width: 100%;
+}
+
+/* Tooltip standard format */
+.chart-tooltip {
+  background: var(--bg-card);
+  backdrop-filter: var(--backdrop-blur);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  box-shadow: var(--shadow-md);
+}
+
+[data-theme='high-contrast'] .chart-tooltip {
+  border: 2px solid #ffffff;
+  background: #000000;
+}
+
+.tooltip-label {
+  font-weight: 700;
+  margin-bottom: var(--spacing-xs);
+  font-size: 0.9rem;
+}
+
+.tooltip-value {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Bottom widgets panel */
+.widgets-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xxl);
+}
+
+@media (max-width: 900px) {
+  .widgets-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.widget-panel {
+  padding: var(--spacing-lg);
+}
+
+.widget-title {
+  font-size: 1.3rem;
+  margin-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--spacing-sm);
+}
+
+.widget-empty {
+  color: var(--text-muted);
+  text-align: center;
+  padding: var(--spacing-xl) 0;
+}
+
+/* Recent Activity List */
+.activity-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.activity-item {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: flex-start;
+}
+
+.activity-icon {
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: var(--radius-sm);
+}
+
+.activity-info {
+  flex-grow: 1;
+}
+
+.activity-text {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.activity-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Challenge Progress widgets */
+.challenge-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.challenge-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.challenge-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+}
+
+.challenge-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.challenge-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.challenge-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  background-color: rgba(245, 158, 11, 0.15);
+  color: var(--accent-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+.challenge-badge.completed {
+  background-color: var(--success-bg);
+  color: var(--primary-color);
+}
+
+.challenge-progress-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.challenge-progress-bar {
+  flex-grow: 1;
+  height: 8px;
+  border-radius: var(--radius-full);
+  border: none;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.challenge-progress-bar::-webkit-progress-bar {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-full);
+}
+
+.challenge-progress-bar::-webkit-progress-value {
+  background-color: var(--primary-color);
+  border-radius: var(--radius-full);
+}
+
+/* High Contrast Progress Styling */
+[data-theme='high-contrast'] .challenge-progress-bar {
+  border: 1px solid #ffffff;
+  background-color: #000000;
+}
+
+[data-theme='high-contrast'] .challenge-progress-bar::-webkit-progress-value {
+  background-color: #ffff00;
+}
+
+.progress-fraction {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  min-width: 45px;
+  text-align: right;
+}

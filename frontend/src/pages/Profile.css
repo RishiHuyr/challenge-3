@@ -1,0 +1,99 @@
+.profile-layout-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl) 0 var(--spacing-xxl);
+}
+
+.profile-card {
+  max-width: 550px;
+  width: 100%;
+  padding: var(--spacing-xxl) var(--spacing-xl);
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-avatar-giant {
+  width: 80px;
+  height: 80px;
+  background-color: var(--primary-color);
+  color: var(--bg-main);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-glow);
+}
+
+[data-theme='high-contrast'] .profile-avatar-giant {
+  background-color: #ffff00;
+  color: #000000;
+  border: 2px solid #ffffff;
+}
+
+.profile-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.profile-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.profile-divider {
+  border: 0;
+  height: 1px;
+  background-color: var(--border-color);
+  margin: var(--spacing-lg) 0;
+}
+
+.security-section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+}
+
+.security-section-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-md);
+}
+
+.profile-submit-btn {
+  width: 100%;
+  padding: 0.85rem;
+  margin-top: var(--spacing-md);
+}
+
+.profile-success-alert {
+  background-color: var(--success-bg);
+  border: 1px solid var(--primary-color);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.success-text {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+[data-theme='high-contrast'] .profile-success-alert {
+  background-color: #000000;
+  border: 2px solid #ffffff;
+}

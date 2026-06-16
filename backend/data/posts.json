@@ -1,0 +1,34 @@
+[
+  {
+    "id": "post_1",
+    "userId": "user_aisha",
+    "userName": "Aisha Diallo",
+    "content": "Just completed my weekly carbon footprint calculation. Cut my transit emissions by 30% by switching to cycling! 🚴‍♀️✨ Let's keep pushing for a cleaner planet!",
+    "likes": [
+      "user_elena",
+      "user_marcus"
+    ],
+    "comments": [
+      {
+        "id": "comment_1_1",
+        "userId": "user_elena",
+        "userName": "Elena Rostova",
+        "content": "That is incredible progress Aisha! Inspiring me to commute by bike tomorrow!",
+        "createdAt": "2026-06-15T10:15:00.000Z"
+      }
+    ],
+    "createdAt": "2026-06-15T09:00:00.000Z"
+  },
+  {
+    "id": "post_2",
+    "userId": "user_hiroshi",
+    "userName": "Hiroshi Tanaka",
+    "content": "Bought a virtual reforestation offset for 500 Eco Points. Every tree counts! 🌲 Let's fund more carbon sinks globally.",
+    "likes": [
+      "user_aisha"
+    ],
+    "comments": [],
+    "badgeShared": "Eco Champion",
+    "createdAt": "2026-06-14T15:20:00.000Z"
+  }
+]

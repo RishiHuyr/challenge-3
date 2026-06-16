@@ -1,0 +1,320 @@
+[
+  {
+    "userId": "user_elena",
+    "ecoPoints": 1420,
+    "streak": 5,
+    "lastActiveDate": "2026-06-16",
+    "sustainabilityScore": 88,
+    "badges": [
+      {
+        "id": "b1",
+        "name": "First Step",
+        "description": "Calculated first emissions footprint",
+        "icon": "🌱",
+        "unlockedAt": "2026-01-10T12:05:00Z"
+      },
+      {
+        "id": "b2",
+        "name": "Carbon Crusader",
+        "description": "Completed 5 recommendations",
+        "icon": "⚡",
+        "unlockedAt": "2026-04-12T14:10:00Z"
+      }
+    ],
+    "challenges": [
+      {
+        "id": "first_assessment",
+        "title": "First Assessment",
+        "description": "Complete your first carbon assessment",
+        "category": "calculator",
+        "pointsReward": 150,
+        "targetValue": 1,
+        "currentValue": 1,
+        "completed": true
+      },
+      {
+        "id": "offset_purchase",
+        "title": "Eco Investor",
+        "description": "Purchase your first carbon offset from the marketplace",
+        "category": "marketplace",
+        "pointsReward": 200,
+        "targetValue": 1,
+        "currentValue": 1,
+        "completed": true
+      },
+      {
+        "id": "community_post",
+        "title": "Eco Advocate",
+        "description": "Create a post sharing your sustainability achievements",
+        "category": "community",
+        "pointsReward": 100,
+        "targetValue": 1,
+        "currentValue": 1,
+        "completed": true
+      },
+      {
+        "id": "save_carbon",
+        "title": "Green Saver",
+        "description": "Unlock total carbon reduction of 50kg CO₂",
+        "category": "recommendations",
+        "pointsReward": 300,
+        "targetValue": 50,
+        "currentValue": 50,
+        "completed": true
+      }
+    ]
+  },
+  {
+    "userId": "user_marcus",
+    "ecoPoints": 950,
+    "streak": 2,
+    "lastActiveDate": "2026-06-16",
+    "sustainabilityScore": 76,
+    "badges": [
+      {
+        "id": "b1",
+        "name": "First Step",
+        "description": "Calculated first emissions footprint",
+        "icon": "🌱",
+        "unlockedAt": "2026-02-15T14:35:00Z"
+      }
+    ],
+    "challenges": [
+      {
+        "id": "first_assessment",
+        "title": "First Assessment",
+        "description": "Complete your first carbon assessment",
+        "category": "calculator",
+        "pointsReward": 150,
+        "targetValue": 1,
+        "currentValue": 1,
+        "completed": true
+      },
+      {
+        "id": "offset_purchase",
+        "title": "Eco Investor",
+        "description": "Purchase your first carbon offset from the marketplace",
+        "category": "marketplace",
+        "pointsReward": 200,
+        "targetValue": 1,
+        "currentValue": 1,
+        "completed": true
+      },
+      {
+        "id": "community_post",
+        "title": "Eco Advocate",
+        "description": "Create a post sharing your sustainability achievements",
+        "category": "community",
+        "pointsReward": 100,
+        "targetValue": 1,
+        "currentValue": 1,
+        "completed": true
+      },
+      {
+        "id": "save_carbon",
+        "title": "Green Saver",
+        "description": "Unlock total carbon reduction of 50kg CO₂",
+        "category": "recommendations",
+        "pointsReward": 300,
+        "targetValue": 50,
+        "currentValue": 50,
+        "completed": true
+      }
+    ]
+  },
+  {
+    "userId": "user_aisha",
+    "ecoPoints": 1850,
+    "streak": 12,
+    "lastActiveDate": "2026-06-16",
+    "sustainabilityScore": 92,
+    "badges": [
+      {
+        "id": "b1",
+        "name": "First Step",
+        "description": "Calculated first emissions footprint",
+        "icon": "🌱",
+        "unlockedAt": "2026-03-01T09:20:00Z"
+      },
+      {
+        "id": "b2",
+        "name": "Eco Champion",
+        "description": "Saved 100kg CO2",
+        "icon": "🏆",
+        "unlockedAt": "2026-05-18T10:00:00Z"
+      },
+      {
+        "id": "b3",
+        "name": "Carbon Crusader",
+        "description": "Completed 5 recommendations",
+        "icon": "⚡",
+        "unlockedAt": "2026-06-02T11:45:00Z"
+      }
+    ],
+    "challenges": [
+      {
+        "id": "first_assessment",
+        "title": "First Assessment",
+        "description": "Complete your first carbon assessment",
+        "category": "calculator",
+        "pointsReward": 150,
+        "targetValue": 1,
+        "currentValue": 1,
+        "completed": true
+      },
+      {
+        "id": "offset_purchase",
+        "title": "Eco Investor",
+        "description": "Purchase your first carbon offset from the marketplace",
+        "category": "marketplace",
+        "pointsReward": 200,
+        "targetValue": 1,
+        "currentValue": 1,
+        "completed": true
+      },
+      {
+        "id": "community_post",
+        "title": "Eco Advocate",
+        "description": "Create a post sharing your sustainability achievements",
+        "category": "community",
+        "pointsReward": 100,
+        "targetValue": 1,
+        "currentValue": 1,
+        "completed": true
+      },
+      {
+        "id": "save_carbon",
+        "title": "Green Saver",
+        "description": "Unlock total carbon reduction of 50kg CO₂",
+        "category": "recommendations",
+        "pointsReward": 300,
+        "targetValue": 50,
+        "currentValue": 50,
+        "completed": true
+      }
+    ]
+  },
+  {
+    "userId": "user_hiroshi",
+    "ecoPoints": 1210,
+    "streak": 4,
+    "lastActiveDate": "2026-06-16",
+    "sustainabilityScore": 81,
+    "badges": [
+      {
+        "id": "b1",
+        "name": "First Step",
+        "description": "Calculated first emissions footprint",
+        "icon": "🌱",
+        "unlockedAt": "2026-04-20T10:50:00Z"
+      },
+      {
+        "id": "b2",
+        "name": "Eco Champion",
+        "description": "Saved 100kg CO2",
+        "icon": "🏆",
+        "unlockedAt": "2026-05-29T16:30:00Z"
+      }
+    ],
+    "challenges": [
+      {
+        "id": "first_assessment",
+        "title": "First Assessment",
+        "description": "Complete your first carbon assessment",
+        "category": "calculator",
+        "pointsReward": 150,
+        "targetValue": 1,
+        "currentValue": 1,
+        "completed": true
+      },
+      {
+        "id": "offset_purchase",
+        "title": "Eco Investor",
+        "description": "Purchase your first carbon offset from the marketplace",
+        "category": "marketplace",
+        "pointsReward": 200,
+        "targetValue": 1,
+        "currentValue": 1,
+        "completed": true
+      },
+      {
+        "id": "community_post",
+        "title": "Eco Advocate",
+        "description": "Create a post sharing your sustainability achievements",
+        "category": "community",
+        "pointsReward": 100,
+        "targetValue": 1,
+        "currentValue": 1,
+        "completed": true
+      },
+      {
+        "id": "save_carbon",
+        "title": "Green Saver",
+        "description": "Unlock total carbon reduction of 50kg CO₂",
+        "category": "recommendations",
+        "pointsReward": 300,
+        "targetValue": 50,
+        "currentValue": 50,
+        "completed": true
+      }
+    ]
+  },
+  {
+    "userId": "4z8mz03z9",
+    "ecoPoints": 350,
+    "streak": 1,
+    "sustainabilityScore": 0,
+    "badges": [
+      {
+        "id": "badge_first_step",
+        "name": "First Step",
+        "description": "Completed your first carbon footprint calculation",
+        "icon": "🌱",
+        "unlockedAt": "2026-06-16T18:16:44.179Z"
+      }
+    ],
+    "challenges": [
+      {
+        "id": "first_assessment",
+        "title": "First Assessment",
+        "description": "Complete your first carbon assessment",
+        "category": "calculator",
+        "pointsReward": 150,
+        "targetValue": 1,
+        "currentValue": 1,
+        "completed": true
+      },
+      {
+        "id": "offset_purchase",
+        "title": "Eco Investor",
+        "description": "Purchase your first carbon offset from the marketplace",
+        "category": "marketplace",
+        "pointsReward": 200,
+        "targetValue": 1,
+        "currentValue": 0,
+        "completed": false
+      },
+      {
+        "id": "community_post",
+        "title": "Eco Advocate",
+        "description": "Create a post sharing your sustainability achievements",
+        "category": "community",
+        "pointsReward": 100,
+        "targetValue": 1,
+        "currentValue": 0,
+        "completed": false
+      },
+      {
+        "id": "save_carbon",
+        "title": "Green Saver",
+        "description": "Unlock total carbon reduction of 50kg CO₂",
+        "category": "recommendations",
+        "pointsReward": 300,
+        "targetValue": 50,
+        "currentValue": 35,
+        "completed": false
+      }
+    ],
+    "lastActiveDate": "2026-06-16"
+  }
+]

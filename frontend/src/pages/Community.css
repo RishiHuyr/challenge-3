@@ -1,0 +1,318 @@
+.community-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.community-title {
+  font-size: 2.2rem;
+  background: linear-gradient(135deg, var(--text-primary), var(--text-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme='high-contrast'] .community-title {
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: var(--text-primary);
+  color: var(--text-primary);
+}
+
+.community-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+/* Layout */
+.community-layout {
+  max-width: 800px;
+  margin: 0 auto var(--spacing-xxl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+/* Post Composer */
+.post-compose-card {
+  padding: var(--spacing-lg);
+}
+
+.compose-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.compose-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--border-color);
+}
+
+.badge-select-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.badge-select-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.badge-select-control {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.85rem;
+  width: auto;
+}
+
+.post-btn {
+  padding: 0.5rem 1.5rem;
+}
+
+/* Feed List */
+.feed-posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.empty-feed-view {
+  text-align: center;
+  padding: 4rem var(--spacing-xl);
+  color: var(--text-muted);
+}
+
+.feed-post-card {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+/* Author Details */
+.post-author-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.author-avatar-circle {
+  width: 42px;
+  height: 42px;
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+[data-theme='high-contrast'] .author-avatar-circle {
+  background-color: #00ffff;
+  color: #000000;
+  border: 1px solid #ffffff;
+}
+
+.author-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.post-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Post content text */
+.post-body-content {
+  margin-left: 2px;
+}
+
+.post-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.post-badge-callout {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  background-color: rgba(245, 158, 11, 0.05);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-sm);
+  margin-top: var(--spacing-md);
+}
+
+[data-theme='high-contrast'] .post-badge-callout {
+  background-color: #000000;
+  border: 2px solid #ffffff;
+}
+
+.post-badge-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.post-badge-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--accent-color);
+}
+
+[data-theme='high-contrast'] .post-badge-title {
+  color: #ffff00;
+}
+
+.post-badge-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* Interactions row */
+.post-interactions-row {
+  display: flex;
+  gap: var(--spacing-xl);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: var(--spacing-sm) 0;
+  margin-top: var(--spacing-xs);
+}
+
+.interaction-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  transition: all var(--transition-fast);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.interaction-btn:hover {
+  color: var(--text-primary);
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.interaction-btn.like-btn.liked {
+  color: var(--primary-color);
+}
+
+[data-theme='high-contrast'] .interaction-btn.like-btn.liked {
+  color: #ffff00;
+}
+
+.interaction-btn.comment-toggle-btn.active {
+  color: var(--secondary-color);
+}
+
+[data-theme='high-contrast'] .interaction-btn.comment-toggle-btn.active {
+  color: #00ffff;
+}
+
+/* Comments Panel styling */
+.comments-panel-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: rgba(255, 255, 255, 0.01);
+  border-radius: var(--radius-sm);
+}
+
+.comments-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.comment-item {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: flex-start;
+}
+
+.comment-avatar-circle {
+  width: 28px;
+  height: 28px;
+  background-color: var(--text-muted);
+  color: var(--bg-main);
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.comment-content-box {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  flex-grow: 1;
+}
+
+.comment-header-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+  font-size: 0.8rem;
+}
+
+.comment-author {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.comment-date {
+  color: var(--text-muted);
+}
+
+.comment-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+/* Comment Input Reply form */
+.comment-form-row {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+  margin-top: var(--spacing-xs);
+}
+
+.comment-input-control {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+.comment-submit-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}

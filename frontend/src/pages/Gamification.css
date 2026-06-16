@@ -1,0 +1,341 @@
+.gamification-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.gamification-title {
+  font-size: 2.2rem;
+  background: linear-gradient(135deg, var(--text-primary), var(--text-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme='high-contrast'] .gamification-title {
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: var(--text-primary);
+  color: var(--text-primary);
+}
+
+.gamification-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+/* Overview Cards */
+.game-stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+@media (max-width: 900px) {
+  .game-stats-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.game-stat-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+}
+
+.game-stat-icon {
+  font-size: 2.2rem;
+  flex-shrink: 0;
+}
+
+.game-stat-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+}
+
+.game-stat-value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  font-family: var(--font-display);
+}
+
+.game-stat-unit {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.game-stat-subtext {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Main Grid Layout */
+.game-main-grid {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xxl);
+}
+
+@media (max-width: 1024px) {
+  .game-main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.leaderboard-section, .achievements-section, .badges-section {
+  padding: var(--spacing-lg);
+}
+
+.section-title {
+  font-size: 1.35rem;
+  margin-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--spacing-sm);
+  font-weight: 600;
+}
+
+/* Leaderboard Table styling */
+.leaderboard-table-wrapper {
+  overflow-x: auto;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.leaderboard-table th {
+  padding: 0.75rem var(--spacing-md);
+  border-bottom: 2px solid var(--border-color);
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.leaderboard-table td {
+  padding: 0.75rem var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.95rem;
+}
+
+.rank-cell {
+  font-weight: 800;
+  font-family: var(--font-display);
+  width: 60px;
+}
+
+.medal-icon {
+  font-size: 1.25rem;
+}
+
+.user-cell {
+  font-weight: 600;
+}
+
+.current-user-badge {
+  font-size: 0.7rem;
+  background-color: var(--primary-color);
+  color: var(--bg-main);
+  padding: 0.1rem 0.35rem;
+  border-radius: var(--radius-sm);
+  margin-left: var(--spacing-xs);
+  vertical-align: middle;
+}
+
+[data-theme='high-contrast'] .current-user-badge {
+  background-color: #ffff00;
+  color: #000000;
+}
+
+.current-user-row {
+  background-color: rgba(16, 185, 129, 0.05);
+  font-weight: 700;
+}
+
+.current-user-row td {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+[data-theme='high-contrast'] .current-user-row {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+[data-theme='high-contrast'] .current-user-row td {
+  color: #000000;
+}
+
+/* Challenges Column list */
+.challenges-badges-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.challenges-list-detail {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.challenge-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+}
+
+.challenge-detail-item.completed {
+  border-color: rgba(16, 185, 129, 0.3);
+  background-color: rgba(16, 185, 129, 0.02);
+}
+
+.challenge-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+}
+
+.challenge-item-meta {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: flex-start;
+}
+
+.challenge-bullet {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.challenge-item-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.challenge-item-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.challenge-reward-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  background-color: rgba(245, 158, 11, 0.15);
+  color: var(--accent-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+.challenge-reward-badge.done {
+  background-color: var(--success-bg);
+  color: var(--primary-color);
+}
+
+.challenge-progress-details {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.challenge-detail-progress-bar {
+  flex-grow: 1;
+  height: 8px;
+  border-radius: var(--radius-full);
+  border: none;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.challenge-detail-progress-bar::-webkit-progress-bar {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-full);
+}
+
+.challenge-detail-progress-bar::-webkit-progress-value {
+  background-color: var(--primary-color);
+  border-radius: var(--radius-full);
+}
+
+[data-theme='high-contrast'] .challenge-detail-progress-bar {
+  border: 1px solid #ffffff;
+  background-color: #000000;
+}
+
+[data-theme='high-contrast'] .challenge-detail-progress-bar::-webkit-progress-value {
+  background-color: #ffff00;
+}
+
+.progress-fraction-detail {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  min-width: 45px;
+  text-align: right;
+}
+
+/* Badges Grid Panel */
+.empty-badges-view {
+  text-align: center;
+  padding: 3rem var(--spacing-xl);
+  color: var(--text-muted);
+}
+
+.empty-badge-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: var(--spacing-sm);
+}
+
+.badges-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+@media (max-width: 600px) {
+  .badges-grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.badge-inventory-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.badge-inventory-icon {
+  font-size: 2.8rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.badge-inventory-name {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-xs);
+}
+
+.badge-inventory-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-sm);
+  flex-grow: 1;
+}
+
+.badge-unlocked-date {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}

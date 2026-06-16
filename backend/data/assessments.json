@@ -1,0 +1,42 @@
+[
+  {
+    "id": "l8a4bzpan",
+    "userId": "4z8mz03z9",
+    "date": "2026-06-16",
+    "transportation": {
+      "carKm": 15,
+      "bikeKm": 0,
+      "transitKm": 212,
+      "flightsHours": 5000,
+      "rideshareKm": 410
+    },
+    "diet": {
+      "dietType": "vegetarian"
+    },
+    "energy": {
+      "electricityKwh": 450,
+      "gasKwh": 0,
+      "renewablePercent": 0
+    },
+    "waste": {
+      "recyclingPercent": 0,
+      "plasticUsageScore": 3,
+      "wasteKg": 154
+    },
+    "shopping": {
+      "fashionSpend": 0,
+      "electronicsSpend": 0,
+      "goodsSpend": 0
+    },
+    "emissions": {
+      "transportation": 450045,
+      "diet": 140,
+      "energy": 171,
+      "waste": 105,
+      "shopping": 0,
+      "total": 450461
+    },
+    "sustainabilityScore": 0,
+    "createdAt": "2026-06-16T18:16:44.174Z"
+  }
+]

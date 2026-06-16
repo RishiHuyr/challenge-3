@@ -1,0 +1,338 @@
+.calc-layout {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-xxl);
+}
+
+@media (max-width: 900px) {
+  .calc-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.calc-wizard-panel {
+  padding: var(--spacing-xl);
+}
+
+.wizard-progress-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.step-indicator {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  letter-spacing: 0.05em;
+}
+
+.step-progress-bar-container {
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-full);
+  margin: var(--spacing-sm) 0 var(--spacing-md);
+  overflow: hidden;
+}
+
+.step-progress-bar-fill {
+  height: 100%;
+  background-color: var(--primary-color);
+  transition: width var(--transition-normal);
+}
+
+.step-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.step-description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: var(--spacing-xl);
+}
+
+.calc-form {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+}
+
+.wizard-step-content {
+  flex-grow: 1;
+}
+
+.input-error-msg {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--danger-color);
+  margin-top: var(--spacing-xs);
+  font-weight: 600;
+}
+
+.form-input-range {
+  width: 100%;
+  margin: var(--spacing-sm) 0;
+  accent-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.range-indicator-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.wizard-nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border-color);
+}
+
+/* Dietary Radio Options Grid */
+.diet-options-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.diet-option-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  text-align: left;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  width: 100%;
+  padding: var(--spacing-md);
+  transition: all var(--transition-fast);
+}
+
+.diet-option-btn:hover {
+  background: var(--bg-card-hover);
+}
+
+.diet-option-btn.active {
+  border-color: var(--border-focus);
+  background: rgba(16, 185, 129, 0.08);
+  box-shadow: 0 0 0 1px var(--border-focus);
+}
+
+[data-theme='high-contrast'] .diet-option-btn.active {
+  background: #ffffff;
+  color: #000000;
+  border: 3px solid #ffffff;
+}
+
+[data-theme='high-contrast'] .diet-option-btn.active .diet-opt-desc {
+  color: #000000;
+}
+
+.diet-opt-icon {
+  font-size: 2.2rem;
+  flex-shrink: 0;
+}
+
+.diet-opt-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.diet-opt-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.diet-opt-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* Live Calc Sidebar */
+.calc-live-sidebar {
+  padding: var(--spacing-xl);
+  height: fit-content;
+  position: sticky;
+  top: 90px;
+}
+
+.sidebar-title {
+  font-size: 1.3rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.sidebar-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.sidebar-metric-box {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-md);
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.sidebar-metric-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sidebar-metric-value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  font-family: var(--font-display);
+  color: var(--primary-color);
+}
+
+[data-theme='high-contrast'] .sidebar-metric-value {
+  color: #ffff00;
+}
+
+.sidebar-metric-unit {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.sidebar-breakdown-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.breakdown-list-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  padding: var(--spacing-xs) 0;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.breakdown-item-value {
+  font-weight: 700;
+}
+
+.comparison-prompt {
+  margin-top: var(--spacing-lg);
+  font-size: 0.85rem;
+}
+
+.target-progress-track {
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-full);
+  margin-top: var(--spacing-xs);
+  overflow: hidden;
+}
+
+.target-progress-fill {
+  height: 100%;
+  transition: width var(--transition-normal);
+}
+
+/* Success Card Panel */
+.success-panel {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: var(--spacing-xxl) var(--spacing-xl);
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: var(--spacing-md);
+}
+
+.success-subtitle {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xl);
+}
+
+.result-metric-box {
+  background-color: rgba(16, 185, 129, 0.05);
+  border: 1px solid var(--primary-color);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.result-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-xs);
+}
+
+.result-value {
+  font-size: 2.2rem;
+  font-weight: 800;
+  font-family: var(--font-display);
+  color: var(--primary-color);
+}
+
+[data-theme='high-contrast'] .result-metric-box {
+  border: 2px solid #ffffff;
+  background-color: #000000;
+}
+
+[data-theme='high-contrast'] .result-value {
+  color: #ffff00;
+}
+
+.result-unit {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.awards-box {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+  text-align: left;
+}
+
+.award-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+}
+
+.award-icon {
+  font-size: 2rem;
+}
+
+.success-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}

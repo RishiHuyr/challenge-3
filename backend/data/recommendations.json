@@ -1,0 +1,50 @@
+[
+  {
+    "id": "fmcoptdvf",
+    "userId": "4z8mz03z9",
+    "title": "Ditch the Car for Short Trips",
+    "description": "Try walking or cycling for trips under 3km. This cuts local air pollution and improves cardiovascular health.",
+    "category": "transportation",
+    "impact": "medium",
+    "difficulty": "easy",
+    "co2Savings": 35,
+    "status": "completed",
+    "createdAt": "2026-06-16T18:16:44.186Z"
+  },
+  {
+    "id": "f2ygnjiwr",
+    "userId": "4z8mz03z9",
+    "title": "Transition to Public Transit",
+    "description": "Replace your solo car commutes with train, subway, or bus trips to cut your transit emissions by over 50%.",
+    "category": "transportation",
+    "impact": "high",
+    "difficulty": "medium",
+    "co2Savings": 110,
+    "status": "active",
+    "createdAt": "2026-06-16T18:16:44.186Z"
+  },
+  {
+    "id": "58o5m0m3b",
+    "userId": "4z8mz03z9",
+    "title": "Rideshare and Carpool",
+    "description": "When driving is necessary, carpool with colleagues or use rideshare pooling to divide emissions among passengers.",
+    "category": "transportation",
+    "impact": "medium",
+    "difficulty": "easy",
+    "co2Savings": 45,
+    "status": "active",
+    "createdAt": "2026-06-16T18:16:44.186Z"
+  },
+  {
+    "id": "u0naj7we6",
+    "userId": "4z8mz03z9",
+    "title": "Avoid Short-Haul Flights",
+    "description": "For distances under 500km, take high-speed rail instead of flying. Takeoff and landing burn the most jet fuel.",
+    "category": "transportation",
+    "impact": "high",
+    "difficulty": "hard",
+    "co2Savings": 250,
+    "status": "active",
+    "createdAt": "2026-06-16T18:16:44.186Z"
+  }
+]

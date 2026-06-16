@@ -1,0 +1,42 @@
+[
+  {
+    "id": "user_elena",
+    "name": "Elena Rostova",
+    "email": "elena@ecotrack.org",
+    "passwordHash": "$2a$10$xyzFakeHashBcryptForMockElenaRostovaOnly",
+    "role": "user",
+    "createdAt": "2026-01-10T12:00:00.000Z"
+  },
+  {
+    "id": "user_marcus",
+    "name": "Marcus Aurelius",
+    "email": "marcus@green.com",
+    "passwordHash": "$2a$10$xyzFakeHashBcryptForMockMarcusAureliusOnly",
+    "role": "user",
+    "createdAt": "2026-02-15T14:30:00.000Z"
+  },
+  {
+    "id": "user_aisha",
+    "name": "Aisha Diallo",
+    "email": "aisha@ecotrack.org",
+    "passwordHash": "$2a$10$xyzFakeHashBcryptForMockAishaDialloOnly",
+    "role": "user",
+    "createdAt": "2026-03-01T09:15:00.000Z"
+  },
+  {
+    "id": "user_hiroshi",
+    "name": "Hiroshi Tanaka",
+    "email": "hiroshi@circular.jp",
+    "passwordHash": "$2a$10$xyzFakeHashBcryptForMockHiroshiTanakaOnly",
+    "role": "user",
+    "createdAt": "2026-04-20T10:45:00.000Z"
+  },
+  {
+    "id": "4z8mz03z9",
+    "name": "Rishi Gogoi",
+    "email": "zenrishi007@gmail.com",
+    "passwordHash": "$2a$10$y.v.n.SoGn7cH9cpDEqD5.OVL9L8nb.bbNQAELTy4ZiCUMKCB28FS",
+    "role": "user",
+    "createdAt": "2026-06-16T18:15:17.223Z"
+  }
+]
